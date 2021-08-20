@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>email validator project</title>
+    <link rel="stylesheet" href="email css.css">
+</head>
+<body>
+    <section>
+        <div class="container">
+            <h2>Email validator</h2>
+            <div class="inbox">
+                <label for="emial">Email : </label>
+                <textarea onkeyup="emailchecker(this);" name="email" placeholder="Enter your mail...."></textarea>
+                <div class="light"></div>
+            </div>
+            <input id="submit" type="submit">
+        </div>
+    </section>
+    
+    <script>
+        function emailchecker(obj){
+            let  value = obj.value
+            value = value.toString();
+            let doti = value.lastIndexOf(".");
+            let $i = value.lastIndexOf("@");
+            let light = document.querySelector(".light");
+            if(doti-$i > 4 && value.length-doti==4 ){
+                light.style.backgroundColor = "green";
+                document.querySelector("#submit").setAttribute("class","pointer");
+            }
+            else{
+                light.style.backgroundColor = "red";
+                
+            }
+        }
+    </script>
+</body>
+</html>

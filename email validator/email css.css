@@ -1,0 +1,68 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    display: flex;
+    justify-content: center;
+    align-items:center;
+}
+section{
+    background: chartreuse;
+    position: relative;
+    top: 200px;
+}
+.container{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content:center;
+    width: 100%;
+    height: 50vh;
+    background-color: chocolate;
+}
+.container h2{
+    align-items: center;
+    margin: 0 200px 30px;
+    font-size: xx-large;
+}
+.inbox{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+.inbox label{
+    margin:0 25px;
+    font-size: xx-large;
+}
+.inbox textarea {
+    width: 300px;
+    text-align: left;
+    font-size: 20px;
+    padding: 10px 9px 0;
+    border: none;
+    border-radius: 5px;
+    resize: none;
+}
+.inbox .light{
+    width: 25px;
+    height: 25px;
+    border-radius: 50%;
+    background-color: grey;
+    margin: 6px 15px 0;
+    filter: blur(2px);
+    transition: 0.2s;
+}
+
+#submit{
+    margin:10px 20px;
+    padding: 7px;
+    width: 150px;
+    font-size: x-large;
+    position: relative;
+    left: 200px;
+    cursor: not-allowed;
+}
+.pointer{
+    cursor: pointer;
+}
