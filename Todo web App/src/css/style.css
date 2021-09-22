@@ -1,0 +1,176 @@
+body {
+  background-color: #86109B;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-transform: capitalize;
+}
+
+.logo {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.app-title {
+  font-size: 40px;
+  color: white;
+  font-weight: 700;
+  letter-spacing: 1.4px;
+  text-transform: capitalize;
+  text-shadow: 1px 2px 4px #EE5A24;
+}
+
+@media (max-width: 700px) {
+  .app-title {
+    font-size: 24px !important;
+    letter-spacing: 0.8px !important;
+    position: relative;
+    left: 15px !important;
+  }
+}
+
+input {
+  outline: none;
+}
+
+.container {
+  font-size: 16px;
+  color: white;
+  margin: 10px 5px;
+}
+
+.container .input-text {
+  padding: 10px 5px;
+  font-size: 16px;
+  margin: 15px 15px 2px 0;
+  color: black;
+  text-indent: 5px;
+  min-width: 250px;
+  border-radius: 5px;
+  border: none;
+  letter-spacing: 1.4px;
+  -webkit-box-shadow: 3px 4px  5px #5b246496;
+          box-shadow: 3px 4px  5px #5b246496;
+  -webkit-transition-duration: 1s;
+          transition-duration: 1s;
+}
+
+.container .input-text:focus {
+  -webkit-transform: scale(1.04);
+          transform: scale(1.04);
+}
+
+.container button {
+  padding: 4px 8px;
+  border: none;
+  border-radius: 4px;
+  background: orange;
+  color: black;
+  font-weight: 400;
+  height: 30px;
+  min-width: 100px !important;
+  font-size: 16px;
+  letter-spacing: 1.2px;
+  cursor: pointer;
+}
+
+.container ul li {
+  list-style: none;
+  color: black;
+}
+
+.container ul li input {
+  width: 16px;
+  height: 16px;
+  margin: 2px;
+}
+
+.container ul li.todo {
+  width: 400px;
+  height: 50px;
+  background-color: white;
+  color: black;
+  position: relative;
+  left: -50px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin: 5px 2px;
+  overflow: hidden;
+  padding: 0px 4px;
+  border-left: 6px solid #2be253;
+  -webkit-transition: 50ms;
+  transition: 50ms;
+  -webkit-box-shadow: 2px 4px 5px rgba(49, 49, 49, 0.5);
+          box-shadow: 2px 4px 5px rgba(49, 49, 49, 0.5);
+}
+
+.container ul li.todo:hover {
+  border-left: 8px solid #EE5A24;
+}
+
+.container ul li.todo button {
+  position: absolute;
+  right: 10px;
+  border-color: #EE5A24;
+  border: 2px solid #EE5A24 !important;
+  background-color: transparent;
+  font-weight: 500;
+  -webkit-transition: 800ms;
+  transition: 800ms;
+}
+
+.container ul li.todo button:hover {
+  color: white;
+  background-color: #EE5A24;
+}
+
+.container ul li.todo p {
+  width: 300px;
+  overflow: hidden;
+}
+
+@media (max-width: 700px) {
+  .container li.todo {
+    width: 300px !important;
+    height: 50px;
+    color: black;
+    position: relative;
+    left: -10px !important;
+  }
+  .container .input-text {
+    padding: 10px 5px;
+    font-size: 16px;
+    margin: 15px 15px 2px 10px;
+    color: black;
+    text-indent: 5px;
+    min-width: 250px;
+    border-radius: 5px;
+    border: none;
+    letter-spacing: 1.4px;
+    -webkit-box-shadow: 3px 4px  5px #5b246496;
+            box-shadow: 3px 4px  5px #5b246496;
+    -webkit-transition-duration: 1s;
+            transition-duration: 1s;
+  }
+  .container button {
+    margin: 10px !important;
+  }
+}
+/*# sourceMappingURL=style.css.map */

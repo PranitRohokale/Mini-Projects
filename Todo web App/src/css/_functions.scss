@@ -1,0 +1,11 @@
+@import "variables";
+
+
+@function color($c)
+{
+    @return map-get($map: $colors, $key: $c);
+}
+@function font($f:2)
+{
+    @return map-get($map: $font-size, $key:$f );
+}
